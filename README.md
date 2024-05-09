@@ -1,5 +1,5 @@
 ## Configuração do Projeto
-Este é um guia para configurar o projeto localmente.
+Guia para configurar o projeto localmente.
 
 ### Configuração do Banco de Dados
 
