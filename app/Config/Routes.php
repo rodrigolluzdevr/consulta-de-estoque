@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Welcome::index');
-$routes->post('welcome/buscaProdutosPorDepartamento', 'Welcome::buscaProdutosPorDepartamento');
+$routes->get('/', 'Consulta::index');
+$routes->post('consulta/buscaProdutosPorDepartamento', 'Consulta::buscaProdutosPorDepartamento');
 
 

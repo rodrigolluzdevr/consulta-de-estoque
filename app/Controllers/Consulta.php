@@ -6,7 +6,7 @@ use App\Models\DepartamentosModel;
 use App\Models\ProdutosModel;
 use CodeIgniter\Controller;
 
-class Welcome extends Controller
+class Consulta extends Controller
 {
     public function __construct()
     {
@@ -26,7 +26,7 @@ class Welcome extends Controller
 
         $variaveis['options_departamentos'] = $option;
 
-        return view('welcome_message', $variaveis);
+        return view('consulta', $variaveis);
     }
 
     public function buscaProdutosPorDepartamento()
