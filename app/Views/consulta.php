@@ -10,7 +10,6 @@
 </head>
 
 <script>
-    // Arquivo custom.js
     $(document).ready(function() {
         $('#departamentos').change(function() {
             var departamentoID = $(this).val();
@@ -28,9 +27,9 @@
                 },
                 dataType: 'json', // JSON format
                 success: function(data) {
-                    // Clear product list
+                    // clear product list
                     $('#produtos').empty();
-                    // Added new products to list
+                    // added new products to list
                     $.each(data, function(index, produto) {
                         $('#produtos').append('<option value="' + produto.produtos_id + '">' + produto.produtos_nome + '</option>');
                     });

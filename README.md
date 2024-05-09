@@ -1,4 +1,5 @@
 ## Configuração do Projeto
+
 Guia para configurar o projeto localmente.
 
 ### Configuração do Banco de Dados

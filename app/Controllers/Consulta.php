@@ -8,15 +8,12 @@ use CodeIgniter\Controller;
 
 class Consulta extends Controller
 {
-    public function __construct()
-    {
-        // Carrega o helper de URL manualmente
-        helper('url');
-    }
-
     public function index()
     {
+        //load model
         $departamentosModel = new DepartamentosModel();
+
+        //load
         $departamentos = $departamentosModel->retorna_departamentos();
 
         $option = "<option value=''></option>";
@@ -34,15 +31,15 @@ class Consulta extends Controller
         // Obtém o ID do departamento enviado pela requisição POST
         $departamentos_id = $this->request->getPost('departamentos_id');
     
-        // Instancia o modelo de produtos
+        // load model
         $produtosModel = new ProdutosModel();
     
-        // Busca os produtos do departamento no banco de dados
+        // load
         $produtos = $produtosModel->where('produtos_id_departamento', $departamentos_id)
             ->orderBy('produtos_nome', 'asc')
             ->findAll();
     
-        // Retorna os produtos em formato JSON
+        // return JSON
         return $this->response->setJSON($produtos);
     }
     
