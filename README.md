@@ -3,7 +3,7 @@ Este é um guia para configurar o projeto localmente.
 
 ## 1. Configuração do Banco de Dados
 
-- Certifique-se de ter um banco de dados MySQL instalado localmente. 
+> Certifique-se de ter um banco de dados MySQL instalado localmente. 
 
 - Você pode baixar e instalar o MySQL a partir do site oficial.
 
